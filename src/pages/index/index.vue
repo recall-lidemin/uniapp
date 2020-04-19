@@ -69,9 +69,10 @@ export default {
   methods: {
     // 回到顶部
     goTop() {
-      // api接口
+      // api接口pageScrollTo使页面滚动到指定位置
       uni.pageScrollTo({
-        scrollTop: 0
+        scrollTop: 0,
+        duration:300
       });
     },
 
